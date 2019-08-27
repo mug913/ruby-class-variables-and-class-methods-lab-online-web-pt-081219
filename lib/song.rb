@@ -42,7 +42,7 @@ class Song
     
      @@artists << @artist 
       @@genres << @genre
-    binding.pry
+  
   end 
   
   attr_accessor :name, :artist, :genre
