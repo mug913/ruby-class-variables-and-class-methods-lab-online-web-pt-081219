@@ -39,7 +39,7 @@ class Song
       @@artists << @artist 
       @@artist_count[@artist] = 1
     end 
-    
+    binding.pry
   end 
   
   attr_accessor :name, :artist, :genre
