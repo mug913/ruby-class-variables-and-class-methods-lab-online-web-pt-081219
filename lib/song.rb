@@ -3,6 +3,8 @@ class Song
   @@count = 0 
   @@artists = []
   @@genres = []
+  @@genre_count = {} 
+  @@artist_count = {}
   
   def count 
     @@count 
@@ -17,14 +19,20 @@ class Song
   end 
   
   def initialize(name,artist,genre)
-    @@count =+ 1 
+    @@count += 1 
     
     if !@@genres.contain?(genre)
-      @@genres << genre 
+      @@genres << genre
+      @@genre_count[genre] = 1 
+    else 
+      @@genre_count[genre] += 1
     end 
     
      if !@@artists.contain?(artist)
       @@artists << artist 
+      @@artist_count[artist] = 1
+    else 
+       @@artist_count[artist] += 1
     end 
     
   end 
