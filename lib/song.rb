@@ -29,16 +29,19 @@ class Song
     if @@genres.include?(@genre)
        @@genre_count[@genre] += 1
     else 
-      @@genres << @genre
+   #   @@genres << @genre
       @@genre_count[@genre] = 1  
     end 
     
     if @@artists.include?(@artist)
        @@artist_count[@artist] += 1
     else 
-      @@artists << @artist 
+    #  @@artists << @artist 
       @@artist_count[@artist] = 1
     end 
+    
+     @@artists << @artist 
+      @@genres << @genre
     binding.pry
   end 
   
