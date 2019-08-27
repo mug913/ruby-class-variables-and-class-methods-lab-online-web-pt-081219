@@ -8,15 +8,15 @@ class Song
   @@genre_count = {} 
   @@artist_count = {}
   
-  def count 
+  def self.count 
     @@count 
   end 
   
-  def artists 
+  def self.artists 
     @@artist
   end 
   
-  def genre_count 
+  def self.genre_count 
     @@genres 
   end 
   
