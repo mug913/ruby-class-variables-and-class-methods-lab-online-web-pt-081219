@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song 
   
   @@count = 0 
@@ -32,6 +34,7 @@ class Song
     end 
     
      if !@@artists.include?(artist)
+       binding.pry
       @@artists << artist 
       @@artist_count[artist] = 1
     else 
