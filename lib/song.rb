@@ -1,7 +1,7 @@
 class Song 
   
   @@count = 0 
-  @@artist_count = []
+  @@artists = []
   @@genres = []
   
   def count 
@@ -9,7 +9,7 @@ class Song
   end 
   
   def artists 
-    @@artist_name 
+    @@artist
   end 
   
   def genre_count 
@@ -23,8 +23,8 @@ class Song
       @@genres << genre 
     end 
     
-     if !@@genres.contain?(genre)
-      @@genres << genre 
+     if !@@artists.contain?(artist)
+      @@artists << artist 
     end 
     
   end 
